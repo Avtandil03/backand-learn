@@ -5,11 +5,11 @@ import useInput from '../../hooks/useInput';
 
 const MyForm = () => {
 
-  const name = useInput('')
-  const address = useInput('')
+  const name = useInput('', {isEmpty: true, minLength: 2})
+  const address = useInput('', {isEmpty: true, minLength: 3})
   const gender = useInput('')
-  const email = useInput('')
-  const phone = useInput('')
+  const email = useInput('', {isEmpty: true, minLength: 2})
+  const phone = useInput('', {isEmpty: true, minLength: 2})
 
 
 
