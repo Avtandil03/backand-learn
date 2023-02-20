@@ -8,17 +8,23 @@ export default function useInput (initialValue, validations) {
 
   const onChange = (e) => {
     setValue(e.target.value)
+    
+    console.log(valid)
   }
 
   const onBlur = () => {
-    
+    setIsDirty(true)
   }
+
+  
 
   return {
     value,
     onChange,
     onBlur,
     isDirty,
-    ...valid
+    setIsDirty,
+    ...valid,
+
   }
 }

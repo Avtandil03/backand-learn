@@ -4,10 +4,14 @@ import MyForm from './UI/Myform/MyForm'
 
 function App() {
 
+  function fetchData(){
+    console.log('yess')
+  }
+
 
   return (
     <div className="App">
-      <MyForm/>
+      <MyForm submitForm={fetchData}/>
     </div>
   )
 }
