@@ -5,13 +5,12 @@ import MyForm from './UI/Myform/MyForm'
 function App() {
 
   function fetchData(){
-    console.log('yess')
   }
 
 
   return (
     <div className="App">
-      <MyForm submitForm={fetchData}/>
+      <MyForm submitForm={fetchData} />
     </div>
   )
 }
