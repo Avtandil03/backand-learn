@@ -6,4 +6,13 @@
   border: 1px solid teal;
   max-width: 640px;
   padding: 5px;
+  display: flex;
+  alight-items: center;
+  justify-content:space-between;
+
+}
+
+.removeBtn {
+  border: teal 1px solid;
+  padding:4px ;
 }
