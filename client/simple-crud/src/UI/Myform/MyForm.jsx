@@ -21,14 +21,14 @@ const MyForm = ({ setIsPost , setUsersLi}) => {
     phone: phone.value
   }
 
-  function postUser(data) {
-    Axios.post('http://localhost:5174/create', data)
+  const postUser = async (data) => {
+    await Axios.post('http://localhost:5174/create', data)
       .then(() => console.log('Sucsess'))
       .catch(() => console.log('Promise rejected'))
   }
 
-  function getUser(){
-    Axios.get('http://localhost:5174/users')
+  const getUser = async() => {
+    await Axios.get('http://localhost:5174/users')
     .then((response) => {
       setUsersLi(response.data)
     })

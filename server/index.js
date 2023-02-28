@@ -43,6 +43,17 @@ app.get('/users', (req, res) => {
   })
 })
 
+ app.delete('/remove/users/:id', (req, res) => {
+  const id = req.params.id;
+
+  db.query('DELETE FROM userdata WHERE id = ' + id,
+  (error, results, fields) => {
+    if (error) console.log('Errror - ' + error) ;
+    res.send('Row removed successfully');
+  });
+});
+
+
 app.listen(PORT, () => {
   console.log('listening')
 })
