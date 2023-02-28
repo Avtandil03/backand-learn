@@ -16,6 +16,8 @@ This application was built with the following technologies:
 	<img height="50" src="https://user-images.githubusercontent.com/25181517/183568594-85e280a7-0d7e-4d1a-9028-c8c2209e073c.png" alt="Node.js" title="Node.js" />
 	<img height="50" src="https://user-images.githubusercontent.com/25181517/183896128-ec99105a-ec1a-4d85-b08b-1aa1620b2046.png" alt="MySQL" title="MySQL" />
 </div>
+
+
 ## Prerequisites
 
 Before you get started, you need to have the following software installed on your computer :
